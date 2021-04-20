@@ -1,42 +1,37 @@
-baseurl         = "/"
+baseurl         = "https://suhaibsalarzai.github.io/"
 theme           = "casper3"
 languageCode    = "en-US"
 disqusShortname = ""
 paginate        = 6
-publishdir="docs"
+publishdir      ="docs"
 #SectionPagesMenu = "main"
-canonifyurls    = true
 
 [params]
-  title       = "Hugo Casper Two"
-  subtitle    = "Port of Casper 2.x for Hugo"
-  copyright   = "© 2018"
+  title       = "Your Bright Future is Our Mission"
+  subtitle    = "OS Development and Working"
 
-  cover       = "img/blog-cover.jpg"
+  cover       = "uploads/head1.jpg"
   description = "Here is a description of your site."
   metaDescription = ""
   googleAnalytics = ""
   customCSS = []
   RSSLink = ""
 
-  twitterName = "faketryghost"
-  fbName = "fakeghost"
-  githubName = "eueung"
-  linkedinName = "eueung"
-  mediumName = ""
+ 
+  fbName = "sohaib.khan8434"
+  githubName = "suhaibsalarzai"
+  
 
-  logo = "hugo-logo.png"
+  logo = ""
   orgName = "EM"
   orgWebsite = "https://www.telematika.org"
   orgDescription = "Here is a description placeholder for your org"
 
-  showSupport = true
-
-  author = "EM"
-  authorAvatar = "img/ghost-icon.png"
+  author = "Muhammad Suhaib"
+  authorAvatar = "uploads/prof_pic.jpg"
   authorLocation = "Bandung, ID"
-  authorWebsite = "https://eueung.github.io"
-  authorDescription = "Your description here"
+  authorWebsite = "https://github.com/suhaibsalarzai"
+  authorDescription = "Web Developer, Coder"
 
   pageNotFoundTitle = "404 - Page not found"
 
@@ -46,24 +41,22 @@ canonifyurls    = true
 [permalinks]
   post = "/post/:slug/"
 
+[menu]
 [[menu.main]]
   name = "Home"
+  identifier = "home"
   url = "/"
   weight = 200
 
 [[menu.main]]
-  name = "Go"
-  url = "/tags/golang/"
+  name = "Projects"
+  identifier = "projects"
+  url = "/tags/project/"
   weight = 100
 
-[[menu.main]]
-  name = "Categories"
-  url = "/categories/"
-  weight = 99
+
 
 [[menu.main]]
-  name = "External"
+  name = "Google"
   url = "https://google.com/"
   weight = 95
-
-
