@@ -8,12 +8,14 @@
     <language>en-US</language>
     <lastBuildDate>Fri, 16 Apr 2021 19:20:53 +0500</lastBuildDate><atom:link href="https://suhaibsalarzai.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Seond Post</title>
-      <link>https://suhaibsalarzai.github.io/post/seond-post/</link>
+      <title>64 Bit OS</title>
+      <link>https://suhaibsalarzai.github.io/post/64-bit-os/</link>
       <pubDate>Fri, 16 Apr 2021 19:20:53 +0500</pubDate>
       
-      <guid>https://suhaibsalarzai.github.io/post/seond-post/</guid>
-      <description></description>
+      <guid>https://suhaibsalarzai.github.io/post/64-bit-os/</guid>
+      <description>Working and Development In this part we modified the already created 32 bit OS.
+First we will be setting up stack which is crucial to allow us to link in with C code. After that we will switch OS to 64 bit mode.
+ We will write C code to print any text to the screen. As I have printed SEECS created from special characters.  As stack stores functions and variable used in code, we will create stacks.</description>
     </item>
     
     <item>

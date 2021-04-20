@@ -6,7 +6,7 @@
 
     
     
-    <title>32 BIT ARCHITECTURE · Welcome to my website</title>
+    <title>64 Bit OS · Welcome to my website</title>
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -60,7 +60,7 @@
                     </section>
                 
 
-                <h1 class="post-full-title">32 BIT ARCHITECTURE</h1>
+                <h1 class="post-full-title">64 Bit OS</h1>
 
                 
 
@@ -86,8 +86,8 @@
                                 <h4 class="author-name">Muhammad Suhaib</h4>
                             
                             <div class="byline-meta-content">
-                                <time class="byline-meta-date" datetime="2021-104-04">15 April 2021</time>
-                                <span class="byline-reading-time"><span class="bull">&bull;</span> 1 min read</span>
+                                <time class="byline-meta-date" datetime="2021-74-04">16 April 2021</time>
+                                <span class="byline-reading-time"><span class="bull">&bull;</span> 2 min read</span>
                             </div>
                         </section>
 
@@ -102,30 +102,19 @@
             <section class="post-full-content">
                 <div class="post-content">
                     <h1 id="working-and-development">Working and Development</h1>
-<p>OS is written in C also we need assembly for hardware code.</p>
-<ol>
-<li>Install Docker which allows us reproducable environment.</li>
-<li>Install Qemu which allows us to emulate OS</li>
-</ol>
+<p>In this part we modified the already created 32 bit OS.</p>
+<p>First we will be setting up stack which is crucial to allow us to link in with C code. After that we will switch OS to 64 bit mode.</p>
 <ul>
-<li>First we will work in 32 bit architecure.</li>
+<li>We will write C code to print any text to the screen. As I have printed SEECS created from special characters.</li>
 </ul>
-<ol>
-<li>Actual numbers don&rsquo;t matter, just that it&rsquo;s a number</li>
-<li>Ordered sub-list</li>
-<li>And another item.</li>
-</ol>
-<p>We will be using vs code for development.
-Inside the header is magic data which is necessary so that the bootloader can understand that we have an OS that can be run.
-Bootloader is the first loader which is use to locate OS, once it finds OS it will be able to start.</p>
-<p>main.asm file which is the entry point to our OS.
-We have a halt instruction at the end of print to instruct the CPU to freeze and not run any further instructions.</p>
-<p><strong>Linker</strong>
-tells how to link our OS together first section in linker is multiboot loader and then there is text section.</p>
-<p><strong>ISO</strong> is common format to hold OS.
-We write build commands in makeFile and create object file in makeFile where first we will make sure directory exists and then we will use linker to link our object files.</p>
+<p>As stack stores functions and variable used in code, we will create stacks. We will also check for different functions like CPID to check whether it support long mode or not. If LN bit is set long mode is available.</p>
+<p>We typically work with virtual addresses and will implement virtual memory in order to enter 64 bit long mode through paging process. Paging allows us to map virtual address to physical address and we do this by creating page tables. Each table is 4 KBytes.</p>
+<p>Paging will be enable as soon as we enable long mode we have to pass page table location to the CPU. The CPU looks for it in cr3 register.</p>
+<p>To enter 64 bit mode we need global descriptor table after enabling paging we can load local descriptor table and then the code segment in code selector. We eill create kernel function in C and call it in assembly..
+We will set color for foreground and background.</p>
+<p>Finally we will make some changes to the makeFile that we created in 32 bit mode where we will create some variable for C source file and object files also for kernel source file and object file. We will update build commands also and include kernel objects as well.</p>
 <figure>
-    <img src="/uploads/screenshot.jpg"/> 
+    <img src="/uploads/64.jpg"/> 
 </figure>
 
 
@@ -168,9 +157,7 @@ We write build commands in makeFile and create object file in makeFile where fir
             </ul>
         </div>
     </article>
-
-
-            <article class="post-card post
+<article class="post-card post
  no-image
  ">
 
@@ -178,7 +165,7 @@ We write build commands in makeFile and create object file in makeFile where fir
     
         <div class="post-card-content">
     
-            <a class="post-card-content-link" href="https://suhaibsalarzai.github.io/post/64-bit-os/">
+            <a class="post-card-content-link" href="https://suhaibsalarzai.github.io/post/32-bit-architecture/">
     
                 <header class="post-card-header">
                     
@@ -186,13 +173,12 @@ We write build commands in makeFile and create object file in makeFile where fir
                         <div class="post-card-primary-tag">project</div>
                     
 
-                    <h2 class="post-card-title">64 Bit OS</h2>
+                    <h2 class="post-card-title">32 BIT ARCHITECTURE</h2>
                 </header>
     
                 <section class="post-card-excerpt">
-                    <p>Working and Development In this part we modified the already created 32 bit OS.
-First we will be setting up stack which is crucial to allow us to link in with C code. After that we will switch OS to 64 bit mode.
- We will write C code to print any text to the screen. As I have printed SEECS created from special characters.  As stack stores functions and variable used in code, we will create stacks.</p>
+                    <p>Working and Development OS is written in C also we need assembly for hardware code.
+ Install Docker which allows us reproducable environment. Install Qemu which allows us to emulate OS   First we will work in 32 bit architecure.   Actual numbers don&rsquo;t matter, just that it&rsquo;s a number Ordered sub-list And another item.  We will be using vs code for development. Inside the header is magic data which is necessary so that the bootloader can understand that we have an OS that can be run.</p>
                 </section>
     
             </a>
@@ -206,8 +192,8 @@ First we will be setting up stack which is crucial to allow us to link in with C
                     </ul>
                     <div class="post-card-byline-content">
                         <span>Muhammad Suhaib</span>
-                        <span class="post-card-byline-date"><time datetime="2021-74-04">16 April 2021</time>
-                            <span class="bull">&bull;</span> 2 min read</span>
+                        <span class="post-card-byline-date"><time datetime="2021-104-04">15 April 2021</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
                     </div>
                 </footer>
     
@@ -215,6 +201,8 @@ First we will be setting up stack which is crucial to allow us to link in with C
 
 </article>
     
+
+            
         </div>
     </div>
 </aside>
