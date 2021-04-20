@@ -3,6 +3,7 @@ theme           = "casper3"
 languageCode    = "en-US"
 disqusShortname = ""
 paginate        = 6
+publishdir="docs"
 #SectionPagesMenu = "main"
 canonifyurls    = true
 
