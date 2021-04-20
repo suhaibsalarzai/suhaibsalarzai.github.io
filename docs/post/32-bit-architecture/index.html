@@ -6,7 +6,7 @@
 
     
     
-    <title>32 BIT ARCHITECTURE · </title>
+    <title>32 BIT ARCHITECTURE · Welcome to my website</title>
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,19 +23,19 @@
     <div class="inner"><nav class="site-nav">
     <div class="site-nav-left">
         
-            <a class="site-nav-logo" href="https://suhaibsalarzai.github.io/"></a>
+            <a class="site-nav-logo" href="https://suhaibsalarzai.github.io/">Welcome to my website</a>
         
         
         <div class="site-nav-content">
             <ul class="nav" role="menu">
                 
-                <li class="nav-home" role="menuitem"><a href="https://google.com/">Google</a></li>
+                <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
                 
                 <li class="nav-home" role="menuitem"><a href="/tags/project/">Projects</a></li>
                 
                 <li class="nav-home" role="menuitem"><a href="/about/">About me</a></li>
                 
-                <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
+                <li class="nav-home" role="menuitem"><a href="https://google.com/">Google</a></li>
                 
             </ul>
         </div>
@@ -102,19 +102,24 @@
             <section class="post-full-content">
                 <div class="post-content">
                     <h1 id="working-and-development">Working and Development</h1>
+<p>OS is written in C also we need assembly for hardware code.</p>
 <ol>
-<li>First ordered list item</li>
-<li>Another item</li>
+<li>Install Docker which allows us reproducable environment.</li>
+<li>Install Qemu which allows us to emulate OS</li>
 </ol>
 <ul>
-<li>Unordered sub-list.</li>
+<li>First we will work in 32 bit architecure.</li>
 </ul>
 <ol>
 <li>Actual numbers don&rsquo;t matter, just that it&rsquo;s a number</li>
 <li>Ordered sub-list</li>
 <li>And another item.</li>
 </ol>
-<p>⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we&rsquo;ll use three here to also align the raw Markdown).</p>
+<p>We will be using vs code for development.
+Inside the header is magic data which is necessary so that the bootloader can understand that we have an OS that can be run.
+Bootloader is the first loader which is use to locate OS, once it finds OS it will be able to start.</p>
+<p>main.asm file which is the entry point to our OS.
+We have a halt instruction at the end of print to instruct the CPU to freeze and not run any further instructions.</p>
 <p>⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
 ⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
 ⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)</p>
@@ -221,18 +226,7 @@
 </aside>
 
 
-        <footer class="site-footer outer">
-            <div class="site-footer-content inner">
-                <section class="copyright"><a href="https://suhaibsalarzai.github.io/"></a> &copy; 2021</section>
-                <nav class="site-footer-nav">
-                    <a href="https://suhaibsalarzai.github.io/">Latest Posts</a>
-                    
-                    
-                    
-                    <a href="https://jonathanjanssens.com" target="_blank" rel="noopener" style="opacity: 0.5;">Hugo Casper3 by Jonathan Janssens</a>
-                </nav>
-            </div>
-        </footer>
+       
 
     </div>
 

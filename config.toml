@@ -2,40 +2,29 @@ baseurl         = "https://suhaibsalarzai.github.io/"
 theme           = "casper3"
 languageCode    = "en-US"
 disqusShortname = ""
-paginate        = 6
+paginate        = 3
 publishdir      ="docs"
 #SectionPagesMenu = "main"
+  title       = "Welcome to my website"
 
 [params]
-  title       = "Your Bright Future is Our Mission"
+facebook = "https://facebook.com"
+  twitter = "https://twitter.com"
+  description = "OS Development and Working"
+
+  mainSections = ["post"]
   subtitle    = "OS Development and Working"
-
-  cover       = "uploads/head1.jpg"
-  description = "Here is a description of your site."
-  metaDescription = ""
-  googleAnalytics = ""
-  customCSS = []
-  RSSLink = ""
-
  
-  fbName = "sohaib.khan8434"
-  githubName = "suhaibsalarzai"
-  
-
-  logo = ""
-  orgName = "EM"
-  orgWebsite = "https://www.telematika.org"
-  orgDescription = "Here is a description placeholder for your org"
 
   author = "Muhammad Suhaib"
   authorAvatar = "uploads/prof_pic.jpg"
-  authorLocation = "Bandung, ID"
+ 
   authorWebsite = "https://github.com/suhaibsalarzai"
   authorDescription = "Web Developer, Coder"
 
   pageNotFoundTitle = "404 - Page not found"
 
-  #casper or caspertwo
+  #casper 
   singleViewStyle = "casper"
 
 [permalinks]
@@ -46,7 +35,7 @@ publishdir      ="docs"
   name = "Home"
   identifier = "home"
   url = "/"
-  weight = 200
+  weight = 90
 
 [[menu.main]]
   name = "Projects"
@@ -54,9 +43,7 @@ publishdir      ="docs"
   url = "/tags/project/"
   weight = 100
 
-
-
 [[menu.main]]
   name = "Google"
   url = "https://google.com/"
-  weight = 95
+  weight = 205
