@@ -120,20 +120,12 @@ Inside the header is magic data which is necessary so that the bootloader can un
 Bootloader is the first loader which is use to locate OS, once it finds OS it will be able to start.</p>
 <p>main.asm file which is the entry point to our OS.
 We have a halt instruction at the end of print to instruct the CPU to freeze and not run any further instructions.</p>
-<p>⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)</p>
-<ul>
-<li>Unordered list can use asterisks</li>
-</ul>
-<ul>
-<li>Or minuses</li>
-</ul>
-<ul>
-<li>Or pluses</li>
-</ul>
+<p><strong>Linker</strong>
+tells how to link our OS together first section in linker is multiboot loader and then there is text section.</p>
+<p><strong>ISO</strong> is common format to hold OS.
+We write build commands in makeFile and create object file in makeFile where first we will make sure directory exists and then we will use linker to link our object files.</p>
 <figure>
-    <img src="/uploads/head.jpg"/> 
+    <img src="/uploads/screenshot.jpg"/> 
 </figure>
 
 

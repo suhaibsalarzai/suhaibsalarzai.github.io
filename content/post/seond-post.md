@@ -26,15 +26,10 @@ Bootloader is the first loader which is use to locate OS, once it finds OS it wi
 main.asm file which is the entry point to our OS.
 We have a halt instruction at the end of print to instruct the CPU to freeze and not run any further instructions.
 
+**Linker**
+tells how to link our OS together first section in linker is multiboot loader and then there is text section.
 
-⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+**ISO** is common format to hold OS.
+We write build commands in makeFile and create object file in makeFile where first we will make sure directory exists and then we will use linker to link our object files.
 
-- Unordered list can use asterisks
-
-* Or minuses
-
-- Or pluses
-
-{{<figure src = "/uploads/head.jpg">}}
+{{<figure src = "/uploads/screenshot.jpg">}}
