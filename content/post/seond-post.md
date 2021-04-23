@@ -15,10 +15,6 @@ OS is written in C also we need assembly for hardware code.
 
 - First we will work in 32 bit architecure.
 
-1. Actual numbers don't matter, just that it's a number
-1. Ordered sub-list
-1. And another item.
-
 We will be using vs code for development.
 Inside the header is magic data which is necessary so that the bootloader can understand that we have an OS that can be run.
 Bootloader is the first loader which is use to locate OS, once it finds OS it will be able to start.
